@@ -66,22 +66,26 @@ def equals():
             if operation == "add":
                 res = int(num1) + int(num2)
                 print(res) #feedback no terminal
-                expression = "" #reseta a expressão pra proxima operação
+                expression = "" #reseta a expressão (visualmente) pra proxima operação
+                num1 = res #atualiza o valor do numero1 para a proxima operação
                 total["text"] = res 
             if operation == "sub":
                 res = int(num1) - int(num2)
                 print(res)
                 expression = ""
+                num1 = res
                 total["text"] = res
             if operation == "mul":
                 res = int(num1) * int(num2)
                 print(res)
                 expression = ""
+                num1 = res
                 total["text"] = res
             if operation == "div":
                 res = int(num1) / int(num2)
                 print(res)
                 expression = ""
+                num1 = res
                 total["text"] = res
         else:
             pass
